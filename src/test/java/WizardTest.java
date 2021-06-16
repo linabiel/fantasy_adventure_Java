@@ -1,4 +1,5 @@
 import characters.bad.Orc;
+import characters.bad.Warlock;
 import characters.good.Elf;
 import characters.good.Wizard;
 import org.junit.Before;

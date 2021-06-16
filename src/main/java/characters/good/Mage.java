@@ -15,4 +15,8 @@ public abstract class Mage extends Player implements ISpell {
         this.maxHealth = maxHealth;
     }
 
+    public void setSpell(SpellType spell) {
+        this.spell = spell;
+    }
+
 }
