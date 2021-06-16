@@ -1,8 +1,5 @@
 package characters.good;
 
-import behaviours.IWeapon;
-import characters.Player;
-import characters.bad.Enemy;
 import weapons.WeaponsType;
 
 public class Elf extends Fighter implements IWeapon {

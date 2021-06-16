@@ -1,12 +1,13 @@
 package characters.good;
 
-import characters.Player;
 import weapons.WeaponsType;
 
 public class Hobbit extends Fighter implemets IWeapon {
 
-    public Hobbit(String name, double healthPoints, WeaponsType weaponsType, double dama) {
-        super(name, healthPoints);
+    public Hobbit(String name, double healthPoints, WeaponsType weaponsType, double damageMultiplier) {
+        super(name, healthPoints, weaponsType, damageMultiplier);
+        this.weaponsType = WeaponsType.SWORD;
+        this.damageMultiplier = 0.75;
     }
 
     public WeaponsType getWeapon() {
