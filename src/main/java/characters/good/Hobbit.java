@@ -4,10 +4,11 @@ import weapons.WeaponsType;
 
 public class Hobbit extends Fighter implemets IWeapon {
 
-    public Hobbit(String name, double healthPoints, WeaponsType weaponsType, double damageMultiplier) {
-        super(name, healthPoints, weaponsType, damageMultiplier);
+    public Hobbit(String name, double healthPoints, double maxHealth, WeaponsType weaponsType, double damageMultiplier) {
+        super(name, healthPoints, maxHealth, weaponsType, damageMultiplier);
         this.weaponsType = WeaponsType.SWORD;
         this.damageMultiplier = 0.75;
+        this.maxHealth = getHealthPoints();
     }
 
     public WeaponsType getWeapon() {

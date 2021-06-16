@@ -11,7 +11,12 @@ public abstract class Player {
     }
 
     public void takeDamage(double damage){
-        this.healthPoints -= damage;
+        if (this.healthPoints - damage <= 0){
+            this.healthPoints = 0;
+        }
+        else {
+            this.healthPoints -= damage;
+        }
     }
 
     public String getName() {

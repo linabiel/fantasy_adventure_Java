@@ -11,6 +11,7 @@ public class Elf extends Fighter implements IWeapon {
         super(name, healthPoints);
         this.weaponsType = WeaponsType.BOW;
         this.damageMultiplier = 1.5;
+        this.maxHealth = getHealthPoints();
     }
 
     public WeaponsType getWeapon() {
